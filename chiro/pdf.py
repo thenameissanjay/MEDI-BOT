@@ -36,7 +36,7 @@ if uploaded_file:
     extracted_text = extract_text_from_pdf(uploaded_file)
     for page_num, text in enumerate(extracted_text, start=1):
             st.write(f"Page {page_num}:\n{text}\n")
-            api_key = "8590291a-8835-463b-a9e8-c8e1e08535ec"
+            api_key = "YOUR MEDISEARCH API KEY"
             conversation_id = str(uuid.uuid4())
             client = MediSearchClient(api_key=api_key)
             responses = client.send_user_message(conversation=[text], 
