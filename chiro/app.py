@@ -104,7 +104,7 @@ col5.markdown('<style>div[data-testid="stHorizontalBlock"]{text-align: center;}<
 import pyttsx3
 
 # Set your OpenAI API key
-api_key = "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"
+api_key = "YOUR API KEY OPENAI"
 openai.api_key = api_key
 
 def generate_gpt3_response(text):
@@ -141,7 +141,7 @@ def main():
             st.write(text)
 
             # Send the transcribed text to GPT-3 for a response
-            api_key = "8590291a-8835-463b-a9e8-c8e1e08535ec"
+            api_key = "YOUR MEDISEARCH API KEY"
             conversation_id = str(uuid.uuid4())
             client = MediSearchClient(api_key=api_key)
             responses = client.send_user_message(conversation=[text], 
